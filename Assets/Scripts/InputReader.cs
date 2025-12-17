@@ -10,6 +10,9 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
     public event Action InteractEvent;
     public event Action PauseEvent;
     public event Action ResumeEvent;
+    
+    public Vector2 MousePosition {  get; private set; }  
+
     private MainInput gameInput;
 
 
@@ -39,16 +42,18 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
 
     public void SetGameplay()
     {
-        gameInput.Player.Disable();
-        gameInput.UI.Enable();
+        gameInput.UI.Disable();
+        gameInput.Player.Enable();
+        
     }
 
     public void SetUI()
     {
-        gameInput.UI.Disable();
-        gameInput.Player.Enable();
+        gameInput.Player.Disable();
+        gameInput.UI.Enable();
+        
     }
-
+    #region PlayerActions
     public void OnMovement(InputAction.CallbackContext context)
     {
         MovementEvent?.Invoke(context.ReadValue<Vector2>());
@@ -73,7 +78,14 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
         
     }
 
+    public void OnMousePosition(InputAction.CallbackContext context)
+    {
+        MousePosition = context.ReadValue<Vector2>();
+    }
 
+    #endregion
+
+    #region UIActions
     public void OnResume(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -84,7 +96,7 @@ public class InputReader : ScriptableObject, MainInput.IPlayerActions, MainInput
             
     }
 
-
+    #endregion
 
 
 }
