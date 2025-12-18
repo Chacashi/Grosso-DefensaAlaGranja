@@ -6,6 +6,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private CanvasGroup pauseScrean;
 
 
+    private void Awake()
+    {
+        inputReader.SetGameplay();
+    }
     private void OnEnable()
     {
         inputReader.ResumeEvent += SetResume;
