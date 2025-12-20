@@ -10,35 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Build/Desktop/Master.strings.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
   Path: FMODProject/GrossoMusic/Build/Desktop/Master.strings.bank
-  Name: Master.strings
+  Name: Build/Desktop/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639017036152189182
+  lastModified: 639017691720711319
   FileSizes:
-  - Name: Desktop
+  - Name: 
     Value: 1006
-  Exists: 1
---- !u!114 &-8975729303015707623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Music.bank
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
-  Path: FMODProject/GrossoMusic/Build/Desktop/Music.bank
-  Name: Music
-  StudioPath: bank:/Music
-  lastModified: 639017004962253732
-  FileSizes:
-  - Name: Desktop
-    Value: 494
   Exists: 1
 --- !u!114 &-8845116804122297834
 MonoBehaviour:
@@ -55,12 +35,10 @@ MonoBehaviour:
   Path: FMODProject/GrossoMusic/Build/Desktop/Master.bank
   Name: Build/Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 639017036152179179
-  FileSizes:
-  - Name: Desktop
-    Value: 1486
+  lastModified: 639017691720701090
+  FileSizes: []
   Exists: 1
---- !u!114 &-8726671396276633257
+--- !u!114 &-4284201946750538222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -70,15 +48,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambience.bank
+  m_Name: bank:/Build/Desktop/Ambience.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
   Path: FMODProject/GrossoMusic/Build/Desktop/Ambience.bank
-  Name: Ambience
+  Name: Build/Desktop/Ambience
   StudioPath: bank:/Ambience
-  lastModified: 639017004962123332
-  FileSizes:
-  - Name: Desktop
-    Value: 494
+  lastModified: 639017691720802640
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-2908740547385639819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Build/Desktop/Music.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: FMODProject/GrossoMusic/Build/Desktop/Music.bank
+  Name: Build/Desktop/Music
+  StudioPath: bank:/Music
+  lastModified: 639017691720754796
+  FileSizes: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -95,9 +89,9 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -9002708519867568311}
   - {fileID: -8845116804122297834}
-  - {fileID: -8726671396276633257}
-  - {fileID: -8975729303015707623}
-  - {fileID: 4989653042532725230}
+  - {fileID: 4215050934541453542}
+  - {fileID: -4284201946750538222}
+  - {fileID: -2908740547385639819}
   EditorEvents:
   - {fileID: 5455677096117327336}
   EditorParameters: []
@@ -105,9 +99,9 @@ MonoBehaviour:
   - {fileID: -8845116804122297834}
   StringsBanks:
   - {fileID: -9002708519867568311}
-  cacheTime: 639017036152498861
+  cacheTime: 639017691720802640
   cacheVersion: 131634
---- !u!114 &4989653042532725230
+--- !u!114 &4215050934541453542
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,15 +111,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Build/Desktop/SFX.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
   Path: FMODProject/GrossoMusic/Build/Desktop/SFX.bank
-  Name: SFX
+  Name: Build/Desktop/SFX
   StudioPath: bank:/SFX
-  lastModified: 639017036152498861
-  FileSizes:
-  - Name: Desktop
-    Value: 13856
+  lastModified: 639017690601526416
+  FileSizes: []
   Exists: 1
 --- !u!114 &5455677096117327336
 MonoBehaviour:
@@ -146,11 +138,11 @@ MonoBehaviour:
     Data3: -475841359
     Data4: 420295159
   Banks:
-  - {fileID: 4989653042532725230}
+  - {fileID: 4215050934541453542}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1260
+  Length: 260
