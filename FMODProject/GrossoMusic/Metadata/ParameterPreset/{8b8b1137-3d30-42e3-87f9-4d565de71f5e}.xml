@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8b8b1137-3d30-42e3-87f9-4d565de71f5e}">
+		<property name="name">
+			<value>fightTime_intensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7234db0e-7422-475d-a9bb-f094bf299e77}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{017e90ea-f14b-497c-9bf8-d657ebe8a172}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{017e90ea-f14b-497c-9bf8-d657ebe8a172}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

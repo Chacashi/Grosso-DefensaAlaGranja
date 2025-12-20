@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{926c3986-c13a-4130-9da6-90861b312646}">
+		<property name="assetPath">
+			<value>CreditlessOne Punch Man OP  Opening 2UHD 60FPS.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>102.55200000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6518fdad-b280-40b3-bb5a-4041352138d3}</destination>
+		</relationship>
+	</object>
+</objects>

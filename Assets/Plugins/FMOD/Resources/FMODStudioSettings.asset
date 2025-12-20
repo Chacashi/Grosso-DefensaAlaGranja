@@ -258,10 +258,7 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Build/Desktop/Master
-  Banks:
-  - Build/Desktop/Ambience
-  - Build/Desktop/Music
-  - Build/Desktop/SFX
+  Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
