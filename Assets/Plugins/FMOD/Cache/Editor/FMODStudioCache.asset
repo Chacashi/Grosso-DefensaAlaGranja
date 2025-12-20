@@ -10,15 +10,35 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Build/Desktop/Master.strings.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
   Path: FMODProject/GrossoMusic/Build/Desktop/Master.strings.bank
-  Name: Build/Desktop/Master.strings
+  Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639016080074562375
+  lastModified: 639017036152189182
   FileSizes:
-  - Name: 
-    Value: 824
+  - Name: Desktop
+    Value: 1006
+  Exists: 1
+--- !u!114 &-8975729303015707623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: FMODProject/GrossoMusic/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 639017004962253732
+  FileSizes:
+  - Name: Desktop
+    Value: 494
   Exists: 1
 --- !u!114 &-8845116804122297834
 MonoBehaviour:
@@ -35,8 +55,30 @@ MonoBehaviour:
   Path: FMODProject/GrossoMusic/Build/Desktop/Master.bank
   Name: Build/Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 639016080074551985
-  FileSizes: []
+  lastModified: 639017036152179179
+  FileSizes:
+  - Name: Desktop
+    Value: 1486
+  Exists: 1
+--- !u!114 &-8726671396276633257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: FMODProject/GrossoMusic/Build/Desktop/Ambience.bank
+  Name: Ambience
+  StudioPath: bank:/Ambience
+  lastModified: 639017004962123332
+  FileSizes:
+  - Name: Desktop
+    Value: 494
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -53,16 +95,39 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -9002708519867568311}
   - {fileID: -8845116804122297834}
+  - {fileID: -8726671396276633257}
+  - {fileID: -8975729303015707623}
+  - {fileID: 4989653042532725230}
   EditorEvents:
-  - {fileID: 8364773557121285383}
+  - {fileID: 5455677096117327336}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8845116804122297834}
   StringsBanks:
   - {fileID: -9002708519867568311}
-  cacheTime: 639016080074562375
+  cacheTime: 639017036152498861
   cacheVersion: 131634
---- !u!114 &8364773557121285383
+--- !u!114 &4989653042532725230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorBankRef
+  Path: FMODProject/GrossoMusic/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 639017036152498861
+  FileSizes:
+  - Name: Desktop
+    Value: 13856
+  Exists: 1
+--- !u!114 &5455677096117327336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -72,20 +137,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Walk
+  m_Name: event:/PlayerFootSteps
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Walk
+  Path: event:/PlayerFootSteps
   Guid:
-    Data1: -695255351
-    Data2: 1290214822
-    Data3: 517800856
-    Data4: -898967313
+    Data1: -1480630653
+    Data2: 1185270780
+    Data3: -475841359
+    Data4: 420295159
   Banks:
-  - {fileID: -8845116804122297834}
+  - {fileID: 4989653042532725230}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 1260

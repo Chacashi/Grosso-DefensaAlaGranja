@@ -1,6 +1,6 @@
 
 using UnityEngine;
-
+using FMOD.Studio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 inputVector;
 
+    //audio
+    private EventInstance playerWalk;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         inputReader.InteractEvent -= SetInteract;
     }
 
+    private void Start()
+    {
+
+        playerWalk = AudioManager.Instance.CreateEventInstance(FMODEvents.Instance.walkPlayer);
+    }
+
     private void SetMovementValue(Vector2 value)
     {
         inputVector = value;
@@ -50,11 +58,30 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = inputVector * speed;    
-
+        UpdateSound();
     }
 
-    
 
+    private void UpdateSound()
+    {
+        if (rb.linearVelocity != Vector2.zero)
+        {
+
+            PLAYBACK_STATE playbackState;
+            playerWalk.getPlaybackState(out playbackState);
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+            {
+                playerWalk.start();
+            }
+
+        }
+
+
+        else
+        {
+            playerWalk.stop(STOP_MODE.ALLOWFADEOUT);
+        }
+    }
 
 
 
